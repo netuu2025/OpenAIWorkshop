@@ -1,4 +1,4 @@
-# Using Azure OpenAI on custom dataset
+# [DEPRECATED] Using Azure OpenAI on custom dataset
 ### Scenario summary:
 
 This scenario allows use cases to use Open AI as an intelligent agent to answer questions from end users or assist them using knowledge of a proprietary corpus and domain.

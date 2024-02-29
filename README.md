@@ -33,7 +33,6 @@ The following prerequisites must be completed before you start these labs
   - Microsoft.Web
   - Microsoft.Authorization
   - Microsoft.CognitiveServices
-  - Microsoft.CognitiveSearch
   - Microsoft.ManagedIdentity
   - Microsoft.KeyVault
   - Microsoft.Storage
@@ -57,7 +56,6 @@ The following prerequisites must be completed before you start these labs
 | [Lab 1: Automate Mailbox Responses](/labs/Lab_Automate_Mailbox_Responses/README.md) | 45 min |
 | [Lab 2: Azure OpenAI on your data](/labs/Lab_On_Your_Data/README.md) | 60 min |
 | [Lab 3: Chat with your database](/labs/Lab_Data_Analytics/README.md) | 45 min |
-| [Lab 4: Chat with your documents](/labs/Lab_chatWithDocuments/README.md) | 60 min |
 
 
 ## Format
