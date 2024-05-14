@@ -59,14 +59,20 @@ Click on the logic app and click on the edit button
 ![](../../documents/images/lab-1-logicapp-2.png)
 
 
-Expand the first Logic App Step named "When an HTTP request is received" and copy the URL to your text editor
+Click the first Logic App Step named **manual**, to open it.  
+  
+![](../../documents/images/lab-1-logicapp-tsint-first-step-manual.png)
+  
+    
+Set the **Method** field to **POST** (1) and copy the value of the HTTP URL field to your text editor (2), for later use.
 
 ![](../../documents/images/lab-1-logicapp-3.png)
 
 
-Scroll down to locate the Logic App Step named "HTTP". If the box is not already open, click the Title bar to open it.
-
-In the **URI** field, enter the URI of your Azure OpenAI Deployment endpoint, with the following format:
+Scroll down to locate the Logic App Step named "HTTP". If the editor box is not already open, click the Title bar to open it.  
+![](../../documents/images/lab-1-logicapp-tsint-step-CallAOAI.png)  
+  
+In the **URI** field, enter the URI of your Azure OpenAI Deployment endpoint, it hsould look similar to the following:
 
 **"https://<YOUR_AZURE_OPENAI_RESOURCENAME>.openai.azure.com/openai/deployments/<DEPLOYMENT_NAME>/chat/completions?api-version=2023-05-15"**
 
@@ -83,14 +89,27 @@ In the **api-key** field, enter your Azure OpenAI API key.
 ![](../../documents/images/lab-1-logicapp-4.png)
 
 
-Scroll down to the Logic App Step named **"Connections"**, the one with the Outlook logo, and expand it to enter new authorizaion credentials for your mailbox:
+Scroll down to the Logic App Step named **"Send email with options"**, the one with the Outlook logo, and click the title to open the editor box.   
+![](../../documents/images/lab-1-logicapp-tsint-Step-SendEmlWOpts.png)
+  
+  To enter new authorizaion credentials for your mailbox, click **Change connection**:  
+![](../../documents/images/lab-1-logicapp-tsint-Step-SendEmlWOpts-ChgConn.png)  
 
+Click **Add new** then follow the instructions on the screen to **Sign in**. You will be prompted to authenticate with your credentials, and authorize permissins for the application.
 ![](../../documents/images/lab-1-logicapp-5.png)
 
 
-Scroll down to the Logic App Step named **"Condition"** and expand it, then expand the **True** box. Select the valid connection to send the final notification in this logic app.
+Scroll down to the Logic App Step named **"Condition"** and expand it.
+Then expand the **True** box.  
+Click the **Send an email (v2)** title, to open the editor box.  
+![](../../documents/images/lab-1-logicapp-tsint-Open-Step-SendEmlV2.png)  
+  
+  Click **Change connection**.  
+  ![](../../documents/images/lab-1-logicapp-tsint-Step-SendEmlV2-editor.png)
 
-![](../../documents/images/lab-1-logicapp-6.png)
+Select the valid connection to send the final notification in this logic app.
+
+![](../../documents/images/lab-1-logicapp-tsint-Step-SendEmlV2-ChgCn.png)
 
 
 Save the logic app.
@@ -103,8 +122,9 @@ This logic app scans a mail box every X minutes for new emails with the subject:
 
 ![](../../documents/images/lab-1-logicapp-9.png)
 
-> [!IMPORTANT]
-> When you click the 'Deploy to Azure' button below, you will need to provide the URL to your second logic app (email-techsupport-integration) in the 'Email_integration_url' parameter field.
+> **[!IMPORTANT]**  
+> When you click the 'Deploy to Azure' button below, you will need to provide the URL to your second logic app (email-techsupport-integration) in the 'Email_integration_url' parameter field.  
+![](../../documents/images/lab-1-logicapp-tsint-Oview-WorkflowURL.png)
 
 [![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FMicrosoft-USEduAzure%2FOpenAIWorkshop%2Fmain%2Flabs%2FLab_Automate_Mailbox_Responses%2Fscripts%2Freadmailbox%2Ftemplate.json)
 
@@ -118,12 +138,14 @@ After the deployment you should see the new logic app in your resource group.
 ![](../../documents/images/lab-1-logicapp-7.png)
 
 
-Click he new Logic App, then click the **Edit** button
+Click the new Logic App (**read-mailbox-techsupport**), then click the **Edit** button
 
 ![](../../documents/images/lab-1-logicapp-readmailbox-clickedit.png)
 
 
-Select the top box titled **When a new email arrives (V3)** and select the appropiate connection to Office 365 outlook
+Select the top box titled **When a new email arrives (V3)**.  
+Click **Change connection** (at the bottom of the editor box)  
+and select the appropiate connection to Office 365 outlook
 
 ![](../../documents/images/lab-1-logicapp-8.png)
 
@@ -147,7 +169,7 @@ Your Name
 ---
 
 
-Monitor your Inbox for the automated email response. As soon as you receive it, open the email and **click one of the options provided**:
+**Monitor your Inbox for the automated email response*. As soon as you receive it, open the email and **click one of the options provided**:
 
 ![](../../documents/images/Lab-1-screenshot-automatedemailresponsewithoptions.png)
 
