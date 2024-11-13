@@ -13,6 +13,7 @@ In this workshop, you will learn how to use Azure OpenAI On Your Data to chat wi
   - [Deploy a GPT-4 model](#deploy-a-gpt-4-model)
   - [Set the System Message](#set-the-system-message)
   - [Add your data](#add-your-data)
+  - [Deploy to Web App](#deploy-to-web-app)
 
 
 ## Create an AI Hub Respource
@@ -189,3 +190,23 @@ Your name is GrantGPT, a friendly and helpful grant-writing assistant tasked wit
 9. You can test the chatbot by asking questions about the NIH grant writing guidelines
 
     ![Add Data](media/add-your-data-008.png)
+
+## Deploy to Web App
+Now that that we've confirmed that GPT is grounded on your data, we can deploy this as a dedicated web app.
+
+1. Click on the **Deploy button** in the middle of the screen and select **Web App**
+
+    ![Deploy Web App](media/deploy-web-app-001.png)
+
+1. Select **Create a new web app**, provide it with a *globally-unique* Name. Choose your OpenAI Subscription and the AOAI-OnYourData-RG for the Resource Group. Next, select your preferred Region and S1 for the Pricing Plan. Finally, click Enable Chat History and click Deploy.
+
+    ![Deploy Web App](media/deploy-web-app-002.png)
+
+1. The deployment will take a few minutes to complete. After it is done, there'll be an additional wait of approximiately 10 minutes for Entra ID to secure the web app. Once it is complete, you'll be able to click the Launch Web App icon on the top right of the screen to take you to your new chat bot.
+
+
+    ![Deploy Web App](media/deploy-web-app-003.png)
+
+1. Again, test the chatbot by asking it how it can help you.
+
+
