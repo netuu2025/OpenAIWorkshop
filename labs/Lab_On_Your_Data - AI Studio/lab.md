@@ -8,8 +8,8 @@ In this workshop, you will learn how to use Azure OpenAI On Your Data to chat wi
   - [Create an AI Search Resource](#create-an-ai-search-resource)
   - [Access Azure AI Studio](#access-azure-ai-studio)
   - [Connect Azure AI Search to the Hub](#connect-azure-ai-search-to-the-hub)
-  - [Connect NIH Document Container to the Hub](#connect-nih-document-container-to-the-hub)
   - [Create Project in existing AI Hub](#create-project-in-existing-ai-hub)
+  - [Connect NIH Document Container to the Project](#connect-nih-document-container-to-the-project)
   - [Deploy a GPT-4 model](#deploy-a-gpt-4-model)
   - [Set the System Message](#set-the-system-message)
   - [Add your data](#add-your-data)
@@ -94,16 +94,6 @@ An AI Search service in Azure is another requirement for models to chat with and
 
     ![AI Studio](media/ai-studio-006.png)
 
-## Connect NIH Document Container to the Hub
-
-1. Create a **New Connection** under **Connected Resources**
-
-    ![AI Studio](media/ai-studio-004.png)
-
-2. Select **Azure Blob Storage (Preview)**, Select the correct **Subscription**, **Storage Account**, click **nih-documents** container, **Authentication Method** to *Microsoft Entra ID based* and provide the **Connection name** and click **Add connection**
-
-    ![AI Studio](media/ai-studio-007.png)
-
 ## Create Project in existing AI Hub
 
 Projects are hosted by an Azure AI Studio hub that provides enterprise-grade security and a collaborative environment.
@@ -113,6 +103,15 @@ Projects are hosted by an Azure AI Studio hub that provides enterprise-grade sec
 
     ![AI Studio](media/ai-studio-003.png)
 
+## Connect NIH Document Container to the Project
+
+1. Go to The **Project** and Click on the **Settings**. Create a **New Connection** under **Connected Resources**
+
+    ![AI Studio](media/ai-studio-004.png)
+
+2. Select **Azure Blob Storage (Preview)**, Select the correct **Subscription**, **Storage Account**, click **nih-documents** container, **Authentication Method** to *Microsoft Entra ID based* and provide the **Connection name** and click **Add connection**
+
+    ![AI Studio](media/ai-studio-007.png)
 
 ## Deploy a GPT-4 model
 
@@ -137,6 +136,7 @@ Models, such as GPT-3 or GPT-4, must be deployed for you to use them. When you d
 1. Once the deployment is complete, open the model in the playground
 
     ![Deploy Model](media/deploy-model-005.png)
+
 
 ## Set the System Message
 
@@ -208,5 +208,3 @@ Now that that we've confirmed that GPT is grounded on your data, we can deploy t
     ![Deploy Web App](media/deploy-web-app-003.png)
 
 1. Again, test the chatbot by asking it how it can help you.
-
-
