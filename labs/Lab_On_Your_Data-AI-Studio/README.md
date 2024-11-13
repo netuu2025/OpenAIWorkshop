@@ -44,7 +44,7 @@ A web application is a simple way to interact with your model through a browser.
 ## Prerequisites
 1. An Azure Subscription with Owner or Contributor access
 2. An Azure OpenAI resource deployed with GPT-4 or GPT-4o model deployed.
-3. Azure Owner or Contributor access to the Azure Subscription or Resource Group
+3. Owner or Contributor access to the Azure Subscription or Resource Group
 4. Storage Blob Data Reader access to the Azure Subscription or Resource Group
 
 ---
