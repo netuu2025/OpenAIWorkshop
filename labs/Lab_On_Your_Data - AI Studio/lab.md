@@ -180,4 +180,12 @@ Your name is GrantGPT, a friendly and helpful grant-writing assistant tasked wit
 
     ![Add Data](media/add-your-data-006.png)
 
-7. Your data will take a few minutes to be processed into "chunks." This is done because Azure OpenAI models can only process a limited amount of text at a time. To use them on large data sources, you need to split your data into smaller chunks. Azure AI Search uses a custom skill that leverages the Azure OpenAI chunking API to first chunk the data in the storage account and then index the the chunks. Once the data is added, you can test the chatbot by asking questions about the NIH grant writing guidelines.
+7. Your data will take a few minutes to be processed into "chunks." This is done because Azure OpenAI models can only process a limited amount of text at a time. To use them on large data sources, you need to split your data into smaller chunks. Azure AI Search uses a custom skill that leverages the Azure OpenAI chunking API to first chunk the data in the storage account and then index the the chunks.
+
+8. Once the data is added, Change the **Search type** to *Hybrid + Semantic*
+
+    ![Add Data](media/add-your-data-007.png)
+
+9. You can test the chatbot by asking questions about the NIH grant writing guidelines
+
+    ![Add Data](media/add-your-data-008.png)
