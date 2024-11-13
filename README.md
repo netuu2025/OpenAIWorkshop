@@ -19,7 +19,7 @@ The following prerequisites must be completed before you start these labs
 - Approved access to Azure OpenAI service in your Azure subscription. You can request access [here](https://customervoice.microsoft.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR7en2Ais5pxKtso_Pz4b1_xUNTZBNzRKNlVQSFhZMU9aV09EVzYxWFdORCQlQCN0PWcu)
 
 
-  
+
     **IMPORTANT**:
     - Only use your institutions/organization email. Do not use a personal email address (Example: @gmail.com, hotmail.com, etc.)
     - Authorization can take up to 10 business days.
@@ -63,7 +63,7 @@ The following prerequisites must be completed before you start these labs
 | [Lab 1: Automate Mailbox Responses](/labs/Lab_Automate_Mailbox_Responses/README.md) | 45 min |
 | [Lab 2: Azure OpenAI on your data](/labs/Lab_On_Your_Data/README.md) | 60 min |
 | [Lab 3: Chat with your database](/labs/Lab_Data_Analytics/README.md) | 45 min |
-
+| [Lab 4: Azure AI Studio - On Your Data](/labs/Lab_On_Your_Data-AI-Studio/README.md) | 120 min |
 
 ## Format
 
